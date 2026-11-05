@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>유주와 영희할미</title>
+  <meta name="description" content="할머니와 손녀 유주가 함께 요리하고, 놀고, 자라는 추억을 기록하는 홈페이지">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">유주와 영희할미</a>
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-menu" class="site-menu" aria-label="주 메뉴">
+        <a href="#about">소개</a>
+        <a href="#program">프로그램</a>
+        <a href="#gallery">갤러리</a>
+        <a href="#news">소식</a>
+        <a href="#contact">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 히어로 (첫 화면) -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <h1>할머니와 유주의 추억</h1>
+          <p class="hero-sub">함께 요리하고, 함께 놀고, 함께 자라는 우리 이야기</p>
+          <a href="#contact" class="btn btn-main">방문할때 최대한 예의를 지켜줬음한다.</a>
+        </div>
+
+        <!-- 하트 사진 자리: images/hero.jpg 를 넣으면 하트 안에 보여요 -->
+        <div class="hero-heart reveal">
+          <svg viewBox="0 0 100 92" role="img" aria-label="유주와 할머니 사진">
+            <defs>
+              <clipPath id="heartClip">
+                <path d="M50 90 C50 90 4 60 4 30 C4 14 16 4 29 4 C39 4 46 10 50 18 C54 10 61 4 71 4 C84 4 96 14 96 30 C96 60 50 90 50 90 Z"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#heartClip)">
+              <rect width="100" height="92" class="heart-empty"/>
+              <text x="50" y="47" text-anchor="middle" class="heart-label">사진 자리</text>
+              <image href="images/hero.jpg" width="100" height="92" preserveAspectRatio="xMidYMid slice"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 소개 -->
+    <section id="about" class="section">
+      <div class="container narrow reveal">
+        <h2>소개</h2>
+        <p>
+          내가 걸어온 길에서 만난 가장 귀한 선물, 우리 유주.<br>
+          유주에게 <strong>멋진 할머니</strong>로 기억되고 싶어서, 유주와 함께 이 홈페이지를 만들었어요.
+        </p>
+        <p>
+          함께 해 본 일들을 하나씩 여기에 적어 두고, 나중에 유주가 커서 다시 꺼내 볼 수 있으면 좋겠어요.
+        </p>
+      </div>
+    </section>
+
+    <!-- 프로그램 -->
+    <section id="program" class="section section-soft">
+      <div class="container">
+        <h2 class="reveal">프로그램</h2>
+        <p class="section-lead reveal">유주와 영희할미가 함께 해 온 일들이에요.</p>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🍳</div>
+            <h3>함께 요리</h3>
+            <p>유주가 하고 싶은 요리를 같이 만들어요.</p>
+            <ul class="tags">
+              <li>쿠키 만들기</li><li>볶음밥</li><li>김밥</li><li>오이무침</li><li>핫케이크</li><li>등등</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">✂️</div>
+            <h3>손놀이</h3>
+            <p>손 감각이 좋은 유주를 위해 여러 가지 놀이를 했어요.</p>
+            <ul class="tags">
+              <li>가위질</li><li>줄넘기</li><li>실뜨기</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🎒</div>
+            <h3>학교생활</h3>
+            <p>학교에 입학한 유주는 뭐든지 잘해요.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">💜</div>
+            <h3>할머니 마음</h3>
+            <p>그런 유주를 보면 할머니는 정말 뿌듯해요.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 갤러리 -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="reveal">갤러리</h2>
+        <p class="section-lead reveal">사진을 누르면 크게 볼 수 있어요.</p>
+        <div class="gallery-grid">
+          <button class="photo reveal" data-src="images/gallery-1.jpg" data-caption="쿠키 만들기"><img src="images/gallery-1.jpg" alt="쿠키 만들기"><span>쿠키 만들기</span></button>
+          <button class="photo reveal" data-src="images/gallery-2.jpg" data-caption="김밥 말기"><img src="images/gallery-2.jpg" alt="김밥 말기"><span>김밥 말기</span></button>
+          <button class="photo reveal" data-src="images/gallery-3.jpg" data-caption="핫케이크"><img src="images/gallery-3.jpg" alt="핫케이크"><span>핫케이크</span></button>
+          <button class="photo reveal" data-src="images/gallery-4.jpg" data-caption="실뜨기"><img src="images/gallery-4.jpg" alt="실뜨기"><span>실뜨기</span></button>
+          <button class="photo reveal" data-src="images/gallery-5.jpg" data-caption="줄넘기"><img src="images/gallery-5.jpg" alt="줄넘기"><span>줄넘기</span></button>
+          <button class="photo reveal" data-src="images/gallery-6.jpg" data-caption="입학식"><img src="images/gallery-6.jpg" alt="입학식"><span>입학식</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 소식 (게시판) -->
+    <section id="news" class="section section-soft">
+      <div class="container narrow">
+        <h2 class="reveal">소식</h2>
+        <div id="board" class="board reveal">
+          <ul id="post-list" class="post-list"></ul>
+          <article id="post-view" class="post-view" hidden>
+            <p class="post-meta"></p>
+            <h3 class="post-title"></h3>
+            <div class="post-body"></div>
+            <button id="back-to-list" class="btn btn-line">목록으로</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 문의 -->
+    <section id="contact" class="section">
+      <div class="container narrow reveal">
+        <h2>문의</h2>
+        <div class="contact-box">
+          <p class="manner">방문하실 때는 서로 예의를 지켜 주세요. 따뜻한 말 한마디가 큰 힘이 돼요. 🙏</p>
+          <p>궁금한 점이나 하고 싶은 이야기는 메일로 보내 주세요.</p>
+          <a id="mail-btn" class="btn btn-main" href="mailto:your-email@example.com?subject=%5B%EC%9C%A0%EC%A3%BC%EC%99%80%20%EC%98%81%ED%9D%AC%ED%95%A0%EB%AF%B8%5D%20%EB%AC%B8%EC%9D%98">✉️ 메일 보내기</a>
+          <div class="email-row">
+            <span>이메일 주소:</span>
+            <strong id="email-text">your-email@example.com</strong>
+            <button id="copy-btn" class="btn btn-line btn-small">주소 복사</button>
+          </div>
+          <p id="copy-msg" class="copy-msg" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-name">유주와 영희할미</p>
+      <p>© 2026 유주와 영희할미</p>
+    </div>
+  </footer>
+
+  <!-- 맨 위로 가기 -->
+  <button id="to-top" class="to-top" aria-label="맨 위로 가기">↑</button>
+
+  <!-- 사진 크게 보기 -->
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lightbox-close" aria-label="닫기">✕</button>
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-cap"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+﻿하트 사진: hero.jpg
+갤러리 사진: gallery-1.jpg ~ gallery-6.jpg
+이 이름으로 이 폴더에 넣으면 홈페이지에 바로 보여요.
