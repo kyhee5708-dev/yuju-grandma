@@ -76,6 +76,7 @@
 | 날짜 | 부탁한 내용 | 한 일 |
 |---|---|---|
 | 2026-11-05 | CLAUDE.md에 홈페이지 설계(1~4번)와 파일 구조·규칙(0번)을 채우고, 첫 버전 홈페이지 만들기, 미리보기 띄우기 | CLAUDE.md 새로 만듦, `index.html`·`style.css`·`script.js`·`posts/`·`images/` 만듦, 미리보기 서버 켬 |
+| 2026-11-05 | 깃허브로 무료 배포하기 | git·GitHub CLI 설치, GitHub 로그인(kyhee5708-dev), 저장소 `yuju-grandma` 만들어 올림, GitHub Pages 켬 |
 
 ## 6. 진행 상황
 - [x] 설계도(CLAUDE.md) 작성
@@ -84,4 +85,6 @@
 - [ ] **할 일:** 진짜 이메일 주소 정해서 바꾸기
 - [ ] **할 일:** 사진 넣기 — `images/hero.jpg`(하트), `images/gallery-1.jpg` ~ `gallery-6.jpg`(갤러리)
 - [ ] **할 일:** (원하면) 카카오톡 채널 · 구글 폼 주소 연결
-- [ ] **할 일:** GitHub Pages에 올리기
+- [x] GitHub Pages에 올리기 → 공개 주소 **https://kyhee5708-dev.github.io/yuju-grandma/**
+  - 저장소: https://github.com/kyhee5708-dev/yuju-grandma (공개)
+  - 고친 뒤 다시 올리는 법: 클로드에게 "홈페이지 올려 줘"라고 부탁 → 클로드가 git으로 커밋하고 push (1~2분 뒤 반영)
