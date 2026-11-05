@@ -42,6 +42,8 @@
   --shadow: 0 8px 24px rgba(58, 42, 34, 0.08);
   --header-h: 72px;
   --ease: 0.3s ease;
+  --card-reveal-time: 0.6s;     /* 프로그램 카드 나타나는 시간 */
+  --card-reveal-step: 0.1s;     /* 카드끼리 차례 간격 */
 }
 
 /* ---------- 기본 ---------- */
@@ -218,9 +220,18 @@ p { margin: 0 0 var(--space-s); }
 /* ---------- 움직임 ① 스르륵 나타나기 ---------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
 .reveal.visible { opacity: 1; transform: none; }
+
+/* 프로그램 카드: 0.6초 동안, 0.1초씩 차례로 (한 번만 — script.js에서 한 번 보이면 다시 감추지 않음) */
+.card.reveal { transition-duration: var(--card-reveal-time); }
+.card.reveal:nth-child(2) { transition-delay: var(--card-reveal-step); }
+.card.reveal:nth-child(3) { transition-delay: calc(var(--card-reveal-step) * 2); }
+.card.reveal:nth-child(4) { transition-delay: calc(var(--card-reveal-step) * 3); }
+.card.reveal:nth-child(5) { transition-delay: calc(var(--card-reveal-step) * 4); }
+.card.reveal:nth-child(6) { transition-delay: calc(var(--card-reveal-step) * 5); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .reveal, .card.reveal { opacity: 1; transform: none; transition: none; }
   .hero-heart svg { animation: none; }
 }
 
